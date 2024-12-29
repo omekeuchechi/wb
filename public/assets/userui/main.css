@@ -1,0 +1,55 @@
+@import './index.css';
+@import './aside.css';
+@import './footer.css';
+
+main{
+    grid-area: main;
+    padding: 30px 20px;
+}
+#main.active{
+    /* width: calc(100% + 80px); */
+    grid-column: 1/4;
+    padding: 30px 20px;
+    z-index: -2;
+    left: 90px;
+    position: relative;
+  }
+
+.dashboard-link-title{
+    padding: 20px 40px; 
+    display: inline-flex;
+    background: rgb(8, 8, 59);
+    color: #fff;
+    gap: 20px;
+}
+.dt{
+    text-transform: uppercase;
+}
+
+/* details section */
+.user-dashboard-details{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.user-dashboard-details > .ud{
+    padding: 30px 60px;
+    color: #fff;
+}
+.user-dashboard-details > .ud:nth-of-type(1){
+    background: var(--bg-aside);
+}
+.user-dashboard-details > .ud:nth-of-type(2){
+    background: red;
+}
+.user-dashboard-details > .ud:nth-of-type(3){
+    background: blue;
+}
+.user-dashboard-details > .ud:nth-of-type(4){
+    background: rgb(5, 197, 5);
+}
+.user-dashboard-details .ud > .fas{
+    font-size: 40px;
+    padding-bottom: 30px;
+}

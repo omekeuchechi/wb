@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --bg-nav: #fff;
+    --bg-footer: #000;
+    --bg-aside: rgb(209, 11, 209);
+    --bg-1: rgb(209, 11, 209);
+    --color-txt: #fff;
+    --color-search: #000;
+}
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "nav nav"
+    "sidebar main"
+    "sidebar footer";
+    overflow-x: hidden;
+}

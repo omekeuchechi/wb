@@ -1,0 +1,118 @@
+@import './index.css';
+@import './footer.css';
+
+aside{
+    position: sticky;
+    top: 76px;
+    height: calc(100vh - 80px);
+    align-self: start;
+    grid-area: sidebar;
+    background-color: var(--bg-aside);
+    color: var(--color-txt);
+    transition: 300ms ease-in-out;
+    padding: 0 0;
+    /* z-index: 1; */
+    border: none;
+    text-wrap: nowrap;
+    /* border-right: 1px solid #000; */
+}
+
+aside > .user-name-section{
+    display: block;
+    margin: 20px auto;
+
+}
+#u-name {
+    background: #fff;
+    color: var(--bg-aside);
+}
+.uic{
+    padding: 10px;
+}
+
+aside > .dashboard-links{
+    list-style: none;
+    margin: 20px 0;
+    /* line-height: 40px; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* gap: 40px; */
+    /* justify-content: space-around; */
+}
+
+aside > .dashboard-links .dash-list > a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    padding-left: 20px;
+    /* line-height: 80px; */
+    /* padding: 16px 140px 20px 20px; */
+    color: #fff;
+}
+aside > .dashboard-links .dash-list{
+    padding: 8px 0;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+aside .dashboard-links .dash-list a > .title{
+    padding-left: 10px;
+}
+
+
+aside > .dashboard-links .dash-list:hover{
+    background: #fff;
+    padding: 17px 0;
+    display: block;
+}
+
+aside > .dashboard-links .dash-list:hover a{
+    color: var(--bg-aside);
+}
+
+aside .toggle{
+    text-align: right;
+}
+aside .toggle > .move{
+    padding: 8px;
+    font-size: 20px;
+}
+aside.close{
+    padding: 2px;
+    width: 40px;
+    overflow: hidden;
+}
+
+/* aside .dashboard-links .dash-list:hover a::before,
+aside .dashboard-links .dash-list.hovered a::before{
+  content: '';
+  position: relative;
+  right: -300px;
+  top: -50px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50px;
+  pointer-events: none;
+  z-index: -2;
+  box-shadow: 35px 35px 0 10px rgb(246, 246, 253);
+}
+aside .dashboard-links .dash-list:hover a::after,
+aside .dashboard-links .dash-list.hovered a::after{
+  content: '';
+  position: relative;
+  right: 0;
+  bottom: -50px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50px;
+  pointer-events: none;
+  border: none;
+  z-index: -2;
+  box-shadow: 35px -35px 0 10px rgb(246, 246, 253);
+} */
+/* #title.active{
+    /* display: none; */
+    /* color: #fff; */
+/* } */
